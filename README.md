@@ -1,17 +1,61 @@
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=18160342)
-# Project 1: Shell
+# Custom Shell in C
 
-This is the starter code for [Project 1](https://khoury-cs3650.github.io/p1.html).
+This is a simple Unix-like shell implemented in C. It supports running basic commands and demonstrates how a shell parses input and executes processes.
 
-The [Makefile](Makefile) contains the following targets:
+---
 
-- `make all` - compile everything
-- `make tokenize` - compile the tokenizer demo
-- `make tokenize-tests` - compile the tokenizer demo
-- `make shell` - compile the shell
-- `make shell-tests` - run a few tests against the shell
-- `make test` - compile and run all the tests
-- `make clean` - perform a minimal clean-up of the source tree
+## Build Instructions
 
+Clone the repository and build:
 
-The [examples](examples/) directory contains an example tokenizer. It might help.
+```bash
+git clone https://github.com/<your-username>/<repo-name>.git
+cd <repo-name>
+make
+```
+
+This will compile the project and create the executable:
+
+```bash
+./shell
+```
+
+---
+
+## ▶️ Usage
+
+Start the shell:
+
+```bash
+./shell
+```
+
+Then you can run commands like:
+
+* `ls` – list files
+* `pwd` – print current directory
+* `echo hello` – print text
+* `cd <dir>` – change directory
+* `exit` – quit the shell
+
+If you type a valid system command, the shell will execute it just like Bash or Zsh.
+
+---
+
+## Project Structure
+
+```
+.
+├── shell.c           # Main shell implementation
+├── tokenize.c        # Input tokenizer
+├── tokenize_imp.c/h  # Tokenizer implementation & headers
+├── Makefile          # Build system
+└── README.md         # Project documentation
+```
+
+---
+
+## Requirements
+
+* GCC or Clang (C compiler)
+* Make
