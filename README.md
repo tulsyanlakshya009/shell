@@ -9,8 +9,8 @@ This is a simple Unix-like shell implemented in C. It supports running basic com
 Clone the repository and build:
 
 ```bash
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
+git clone https://github.com/tulsyanlakshya009/shell.git
+cd shell
 make
 ```
 
